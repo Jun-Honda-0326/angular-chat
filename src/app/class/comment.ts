@@ -1,6 +1,10 @@
 import { User } from './user';
 
 export class Comment {
-  constructor(public user:  User, public message: string) {}
+  date: number;
+
+  constructor(public user:  User, public message: string) {
+    this.date = Date.now();
+  }
 
 }
