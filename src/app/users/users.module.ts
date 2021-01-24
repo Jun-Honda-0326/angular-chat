@@ -9,7 +9,8 @@ import { SharedModule } from '../shared/shared.module';
   declarations: [NewUserComponent],
   imports: [
     CommonModule,
-    UsersRoutingModule
+    UsersRoutingModule,
+    SharedModule
   ]
 })
 export class UsersModule { }

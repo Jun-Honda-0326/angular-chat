@@ -10,10 +10,6 @@ export class AuthService {
     this.afAuth.onAuthStateChanged(user => console.log(user))
    }
 
-  create(email: string, password: string): Promise<firebase.auth.UserCredential> {
-    return this.afAuth.createUserWithEmailAndPassword(email, password);
-  }
-
   login(email: string, password: string): Promise<firebase.auth.UserCredential | void> {
     return this.afAuth.signInWithEmailAndPassword(email, password)
       .catch(error => console.error(error))
