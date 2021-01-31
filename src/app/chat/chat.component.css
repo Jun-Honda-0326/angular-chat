@@ -1,4 +1,3 @@
-/* 貼り付け用ソースコード */
 .welcome {
   width: 100%;
   height: 100%;
@@ -12,6 +11,18 @@
   margin-bottom: 30px;
 }
 
+.chat-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
+  position: relative;
+  max-width: calc(100% - 250px);
+  height: 100%;
+}
 
 section {
   margin: 50px 10px 90px;
@@ -19,10 +30,9 @@ section {
 
 .chat-editor {
   display: block;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   width: 100%;
-  max-width: 958px;
   min-height: 100px;
   margin: 0;
   padding: 10px;
@@ -37,7 +47,6 @@ section {
   border-radius: 4px;
   font-size: 15px;
   word-break: break-all;
-
 }
 
 .media-body h4.media-heading {
@@ -49,7 +58,7 @@ section {
   color: #aaaaaa;
   font-size: 11px;
 }
-ddd
+
 .media-body pre {
   font-family: inherit;
   color: inherit;
@@ -74,6 +83,7 @@ ddd
 .media-left .icon {
   background-color: #f0974e;
 }
+
 .media-right .icon {
   background-color: #35b8c2;
 }
